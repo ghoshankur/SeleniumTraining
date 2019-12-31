@@ -14,7 +14,7 @@ public class LocatorTechnique {
 		d.get("https://app03.mydbsync.com/appcenter/login");
 		System.out.println("Hitting URL "+d.getCurrentUrl());
 		d.findElement(By.id("Email")).sendKeys("ankur.g@avankia.com");
-		d.findElement(By.name("j_password")).sendKeys("Avankia1#");
+		d.findElement(By.name("j_password")).sendKeys("enter your password");
 		d.findElement(By.id("signIn")).click();
 		//d.findElement(By.linkText("Forgot password?")).click();
 		for(int i=0;i<7;i++){
