@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 public class LocatorTechnique {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\AVANKIA175\\Downloads\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\AVANKIA175\\Downloads\\Selenium\\chromedriver_win32 (3)\\chromedriver.exe");
 		WebDriver d=new ChromeDriver();
 		//Use $x("") to validate the xpath
 		//Use $("") to validate cssSelector 
@@ -23,7 +23,9 @@ public class LocatorTechnique {
 		
 		//d.findElement(By.linkText("Forgot password?")).click();
 		for(int i=0;i<7;i++){
-		d.findElement(By.xpath("/html/body/div[5]/div/div/div/div[2]/button[2]")).click();
+		
+			d.findElement(By.xpath("//button[@name='next']")).click();
+			//d.findElement(By.xpath("/html/body/div[5]/div/div/div/div[2]/button[2]")).click();
 		}
 		d.findElement(By.cssSelector("#page-wrapper > div.row.wrapper.border-bottom.white-bg.page-heading > div.col-lg-3 > div > a")).click();
 		ArrayList<String> windowHandles=new ArrayList<String>(d.getWindowHandles());

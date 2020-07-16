@@ -10,7 +10,7 @@ public class InvokeChromeUsingSelenium {
 		//1) we will strictly impliment method of webdriver
 		//2) Invoke .exe file 
 		//3) Create the Driver object for the browser you want to invoke
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\AVANKIA175\\Downloads\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\AVANKIA175\\Downloads\\Selenium\\chromedriver_win32 (3)\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		String passingURL="https://app03.mydbsync.com/appcenter/login";
 		driver.get("https://app03.mydbsync.com/appcenter/login");
